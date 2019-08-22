@@ -10,7 +10,7 @@ html {
 
 body{
     background-color: #ffffff;
-    font-family: "Montserrat","Kaushan-Script",sans-serif;
+    font-family: "Montserrat","Roboto","Kaushan-Script",sans-serif;
 
 
 }
@@ -76,18 +76,128 @@ img {
 }
 
 .section-title::after {
-    display: block;
-    
+    display: block; 
     width: 60px;
     height: 3px;
     content: " ";
     background-color: rgb(243, 129, 129);
+    text-align: center;
 }
 
 .section-list-item {
+    position: relative;
+    width: 382px;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 82px;
     text-decoration: none;
     list-style: none;
 }
+
+.section-list-item::before {
+    position: absolute;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    content: "";
+    top: 0px;
+    left: 22px;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aqua;
+}
+
+.icons-alarm::before {
+    background-image: url(../img/icons/services/ALARM.png);
+}
+
+.icons-line::before {
+    background-image: url(../img/icons/services/LINE\ GRAPH.png);
+}
+
+.icons-computer::before {
+    background-image: url(../img/icons/services/COMPUTER\ _\ OK.png);
+}
+.icons-book::before {
+    background-image: url(../img/icons/services/BOOK\ 2.png);
+}
+.icons-home::before {
+    background-image: url(../img/icons/services/HOME.png);
+}
+.icons-image::before {
+    background-image: url(../img/icons/services/IMAGE.png);
+}
+
+/* .section-list-item h3 {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.section-list-item p {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300i;
+    line-height: 24px;
+    color: #999999;
+    text-decoration: none;
+} */
+
+.section-list-item p {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.section-list-item h3 {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.our-team-name h3 {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.our-team-position p {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300 i;
+    line-height: 24px;
+    color: #999999;
+    text-decoration: none;
+    text-decoration: 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-list-item h3 {
     font-family: "Montserrat";
@@ -107,6 +217,30 @@ img {
 }
 
 /* Meet our team */
+
+.our-team li {
+    list-style: none;
+}
+
+.our-team-list-socials a {
+    text-decoration: none; 
+}
+
+/* footer */
+
+.page-footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #333333;
+
+}
+.attachment a {
+    text-decoration: none;
+    color: #f38181;
+}
+
 
 
 
