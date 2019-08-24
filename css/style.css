@@ -176,7 +176,7 @@ img {
     text-decoration: none;
 }
 
-.our-team-position p {
+.our-team-position {
     font-family: "Roboto";
     font-size: 15px;
     font-weight: 300i;
@@ -214,12 +214,30 @@ img {
 }
  /* footer */
 
-  .email-button {
+  .email {
       border: none;
       margin: 0px;
       padding: 0px;
+      font-family: "Roboto";
+      font-size: 15px;
+      font-weight: 300i;
+      font-style: italic;
+      line-height: 24px;
+      color: #999999;
   }
-""
+
+  .email-button {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(149, 225, 211);
+    border-style: none;
+  }
+
 
 
 
