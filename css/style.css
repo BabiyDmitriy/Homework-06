@@ -9,10 +9,10 @@ html {
 }
 
 body{
+    min-width: 1201px;
+    height: 100%;
     background-color: #ffffff;
     font-family: "Montserrat","Roboto","Kaushan-Script",sans-serif;
-
-
 }
 
 img {
@@ -29,14 +29,9 @@ img {
 /* header */
 
 .page-header {
-    font-size: 14px;
-    line-height: 17px;
-    font-family: "Montserrat";
-    color: rgb(149, 225, 211);
-    text-transform: uppercase;
-    text-decoration: none;
-    list-style: none;
-    padding-bottom: 60px;  
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 60px; 
 }
 
 .page-navigation {
@@ -56,11 +51,15 @@ img {
 }
 
 .site-navigation a {
-}
-
-.page-header a {
-    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Montserrat";
     color: rgb(149, 225, 211);
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    padding-bottom: 60px;  
+    transition: color 200ms linear;
 }
 
 .site-navigation a::after {
@@ -69,11 +68,20 @@ img {
     height: 3px;
     content: " ";
     background-color: rgb(243, 129, 129);
+    left: 0; 
+	width: 0;
+	transition: width 0.2s linear;
 }
+
+.site-navigation a:hover::after,  
+.site-navigation a:focus::after {
+    color: rgb(243,129,129);
+    width: 100%;
+} 
+
 .site-navigation a:hover,
 .site-navigation a:focus {
-    color: rgb(243,129,129);
-    
+    color: rgb(243,129,129); 
 }
 
 /* Amazing Services */
@@ -128,6 +136,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    justify-content: space-between;
     margin: 0px;
     /* padding-bottom: 104px; */
 }
@@ -177,6 +186,13 @@ img {
 
 /* Meet our team */
 
+.our-team {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
 .our-team li {
     list-style: none;
 }
@@ -209,6 +225,9 @@ img {
 }
 
 .team-description{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 94px;
     font-family: "Roboto";
     font-size: 15px;
     line-height: 24px;
@@ -221,19 +240,25 @@ img {
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    padding-bottom: 84px;
 }
 
 .our-team-list {
     position: relative;
-    display: flex;
+    display: flex; 
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-between; 
     text-align: center;
+}
+
+.our-team-image {
+    padding-bottom: 30px;
 }
 
 .our-team-name {
     margin: 0px;
     padding: 0px;
+    padding-bottom: 10px;
     font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
@@ -246,12 +271,13 @@ img {
 .our-team-position {
     font-family: "Roboto";
     font-size: 15px;
-    font-weight: 300i;
+    font-weight: 300;
     font-style: italic;
     line-height: 24px;
     color: #999999;
     margin: 0px;
     padding: 0px;
+    /* padding-bottom: 84px; */
 }
 
 .our-team-list-socials  {
@@ -310,6 +336,17 @@ img {
 /* footer */
 
 .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 62px;
+    margin: 0px auto;
+    padding: 0px;
+} 
+
+.page-attachment {
+    margin: 0px;
+    padding: 0px;
     font-family: "Montserrat";
     font-size: 14px;
     line-height: 17px;
@@ -317,32 +354,27 @@ img {
     color: #333333;
 
 }
+
+.attachment {
+    margin: 0px;
+    padding: 0px;
+}
 .attachment a {
     text-decoration: none;
     color: #f38181;
 }
 
-.page-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 62px;
-    margin: 0px;
-    padding: 0px;
-}
-
  .email {
    min-width: 228px;
    height: 40px;
-   border: 1px solid rgba(149, 225, 211, 0.5);
-   /* border-right: none; */
+   border: (1px solid #cccccc 0.7));
    margin: 0px;
-   padding: 0px;
+   padding-left: 12px;
    font-family: "Roboto";
    font-size: 15px;
-   font-weight: 300i;
-   font-style: italic;
    line-height: 24px;
+   font-weight: 300;
+   font-style: italic;
    color: #999999;
  }
 
@@ -350,6 +382,8 @@ img {
    min-width: 150px;
    height: 40px;
    border: none;
+   margin: 0px;
+   padding: 0px;
    font-family: "Montserrat";
    font-size: 14px;
    font-weight: 700;
