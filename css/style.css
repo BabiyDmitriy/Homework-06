@@ -29,7 +29,6 @@ img {
 /* header */
 
 .page-header {
-    height: 100px;
     font-size: 14px;
     line-height: 17px;
     font-family: "Montserrat";
@@ -37,7 +36,26 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     list-style: none;
-    
+    padding-bottom: 60px;  
+}
+
+.page-navigation {
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.site-navigation a {
 }
 
 .page-header a {
@@ -46,8 +64,8 @@ img {
 }
 
 .site-navigation a::after {
+    margin-top: 12px;
     display: block;
-    width: 50px;
     height: 3px;
     content: " ";
     background-color: rgb(243, 129, 129);
@@ -60,7 +78,15 @@ img {
 
 /* Amazing Services */
 
+.section-title{
+    margin: 0px;
+    padding-bottom: 66px;
+    text-align: center;
+}
+
 .section-title-a {
+    margin: 0px;
+    padding-bottom: 28px;
     font-family: "Kaushan Script";
     font-weight: 400;
     font-size: 24px;
@@ -68,6 +94,8 @@ img {
 }
 
 .section-title-b {
+    margin: 0px;
+    padding-bottom: 42px;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 30px;
@@ -76,23 +104,36 @@ img {
 }
 
 .section-title::after {
+    display: flex;
+    justify-content: center;
     display: block; 
+    margin: 0px auto;
     width: 60px;
     height: 3px;
     content: " ";
     background-color: rgb(243, 129, 129);
-    text-align: center;
 }
 
 .section-list-item {
     position: relative;
     width: 382px;
-    height: 120px;
+    height: 170px;
     margin: 0px;
-    padding: 0px;
     padding-left: 82px;
     text-decoration: none;
     list-style: none;
+}
+
+.section-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 0px;
+    /* padding-bottom: 104px; */
+}
+
+.section-list li {
+    /* padding-bottom: 104px; */
 }
 
 .section-list-item::before {
@@ -121,35 +162,32 @@ img {
 .icons-computer::before {
     background-image: url("../img/icons/services/COMPUTER\ _\ OK.png");
 }
+
 .icons-book::before {
     background-image: url("../img/icons/services/BOOK\ 2.png");
 }
+
 .icons-home::before {
     background-image: url("../img/icons/services/HOME.png");
 }
+
 .icons-image::before {
     background-image: url("../img/icons/services/IMAGE.png");
 }
 
-/* .section-list-item h3 {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    color: #333333;
-    text-decoration: none;
+/* Meet our team */
+
+.our-team li {
+    list-style: none;
+}
+
+.our-team-list-socials a {
+    text-decoration: none; 
 }
 
 .section-list-item p {
-    font-family: "Roboto";
-    font-size: 15px;
-    font-weight: 300i;
-    line-height: 24px;
-    color: #999999;
-    text-decoration: none;
-} */
-
-.section-list-item p {
+    margin: 0px;
+    padding: 0px;
     font-family: "Roboto";
     font-size: 15px;
     font-weight: 400;
@@ -159,6 +197,9 @@ img {
 }
 
 .section-list-item h3 {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
     font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
@@ -167,13 +208,39 @@ img {
     text-decoration: none;
 }
 
-.our-team-name h3 {
+.team-description{
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    text-align: center;
+}
+
+.our-team {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.our-team-list {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align: center;
+}
+
+.our-team-name {
+    margin: 0px;
+    padding: 0px;
     font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     color: #333333;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .our-team-position {
@@ -183,10 +250,20 @@ img {
     font-style: italic;
     line-height: 24px;
     color: #999999;
+    margin: 0px;
+    padding: 0px;
 }
 
-.our-team-list-socials li {
-    /* display: inline-block; */
+.our-team-list-socials  {
+    width: 380px;
+    height: 470px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
 }
 
 .our-team-list-socials a {
@@ -196,8 +273,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(252, 237, 138);
-    border: 1px solid rgb(243,129,129);
-    
+    border: 1px solid rgb(243,129,129); 
 }
 
 .icons-Facebook {
@@ -212,43 +288,6 @@ img {
 .icons-Instagram {
     background-image: url("../img/icons/socials/twitter.png");
 }
- /* footer */
-
-  .email {
-      border: none;
-      margin: 0px;
-      padding: 0px;
-      font-family: "Roboto";
-      font-size: 15px;
-      font-weight: 300i;
-      font-style: italic;
-      line-height: 24px;
-      color: #999999;
-  }
-
-  .email-button {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: rgb(149, 225, 211);
-    border-style: none;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .section-list-item h3 {
@@ -266,16 +305,6 @@ img {
     line-height: 24px;
     font-weight: 400;
     color: #999999;
-}
-
-/* Meet our team */
-
-.our-team li {
-    list-style: none;
-}
-
-.our-team-list-socials a {
-    text-decoration: none; 
 }
 
 /* footer */
@@ -293,6 +322,44 @@ img {
     color: #f38181;
 }
 
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    margin: 0px;
+    padding: 0px;
+}
+
+ .email {
+   min-width: 228px;
+   height: 40px;
+   border: 1px solid rgba(149, 225, 211, 0.5);
+   /* border-right: none; */
+   margin: 0px;
+   padding: 0px;
+   font-family: "Roboto";
+   font-size: 15px;
+   font-weight: 300i;
+   font-style: italic;
+   line-height: 24px;
+   color: #999999;
+ }
+
+ .email-button {
+   min-width: 150px;
+   height: 40px;
+   border: none;
+   font-family: "Montserrat";
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 17px;
+   color: #ffffff;
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: rgb(149, 225, 211);
+   border-style: none;
+ }
 
 
 
