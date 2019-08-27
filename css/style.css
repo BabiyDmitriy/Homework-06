@@ -247,6 +247,38 @@ img {
     text-align: center;
 }
 
+.our-team-list .our-team-list-socials:hover,
+.our-team-list .our-team-list-socials:focus {
+    transition: background-color, 0.2s linear; 
+    background-image: linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%); 
+    transform: translate(-10px[,-10px]);
+     
+    opacity: 0.9;  
+
+
+    /* как вариант */
+
+     box-shadow: 10px 10px 10px rgb(149,225,211),
+    1px 1px rgb(149,225,211),
+    2px 2px rgb(149,225,211),
+    3px 3px rgb(149,225,211),
+    4px 4px rgb(149,225,211),
+    5px 5px rgb(149,225,211),
+    6px 6px rgb(149,225,211),
+    7px 7px rgb(149,225,211),
+    8px 8px rgb(149,225,211),
+    9px 9px rgb(149,225,211),  
+    10px 10px rgb(149,225,211);
+    /* transform: translate(-10px);  */
+
+
+    /* или */
+
+    box-shadow: 1px 1px ( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%), 10px 10px rgb(149, 225, 211);
+    top: -10px;
+    left: -10px;
+}
+
 .our-team-image {
     padding-bottom: 30px;
 }
@@ -273,7 +305,6 @@ img {
     color: #999999;
     margin: 0px;
     padding: 0px;
-    /* padding-bottom: 84px; */
 }
 
 .our-team-list-socials  {
@@ -286,9 +317,9 @@ img {
     justify-content: center;
     flex-direction: row;
     align-items:center;
-    background-color: rgb(149, 225, 211);
-    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-    transition: background-color  0.2s linear;
+    box-shadow: 0px 0px , 10px 10px rgb(149, 225, 211);
+    /* transform: translate(-10px[,-10px]); */
+    background-image: linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     opacity: 0;
 }
 
@@ -299,8 +330,9 @@ img {
     text-decoration: none;     
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(252, 237, 138);
+    background-color: rgb(252, 227, 138);
     border: 1px solid rgb(243,129,129); 
+    border-collapse: collapse;
 }
 
 .our-team-list-socials a:hover ,
@@ -309,10 +341,6 @@ img {
     opacity: 1;
     transition: background-color 0.2s linear;
 } 
-
-.our-team-image :hover .our-team-list-socials {
-     opacity: 1;
-}
 
 /* .Rectangle_14 {
     background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
