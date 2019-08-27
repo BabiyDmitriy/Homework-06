@@ -76,6 +76,7 @@ img {
 .site-navigation a:hover::after,  
 .site-navigation a:focus::after {
     color: rgb(243,129,129);
+    transition: width 0.2s linear;
     width: 100%;
 } 
 
@@ -118,7 +119,7 @@ img {
     margin: 0px auto;
     width: 60px;
     height: 3px;
-    content: " ";
+    content: "";
     background-color: rgb(243, 129, 129);
 }
 
@@ -138,7 +139,6 @@ img {
     align-content: flex-start;
     justify-content: space-between;
     margin: 0px;
-    /* padding-bottom: 104px; */
 }
 
 .section-list li {
@@ -157,7 +157,7 @@ img {
     height: 34px;
     background-repeat: no-repeat;
     background-position: center;
-    color: aqua;
+    color: rgb(149, 225, 211);
 }
 
 .icons-alarm::before {
@@ -195,10 +195,6 @@ img {
 
 .our-team li {
     list-style: none;
-}
-
-.our-team-list-socials a {
-    text-decoration: none; 
 }
 
 .section-list-item p {
@@ -290,17 +286,48 @@ img {
     justify-content: center;
     flex-direction: row;
     align-items:center;
+    background-color: rgb(149, 225, 211);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    transition: background-color  0.2s linear;
+    opacity: 0;
 }
 
 .our-team-list-socials a {
     display: block;
     width: 58px;
     height: 58px;
+    text-decoration: none;     
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(252, 237, 138);
     border: 1px solid rgb(243,129,129); 
 }
+
+.our-team-list-socials a:hover ,
+.our-team-list-socials a:focus {
+    background-color: rgb(149, 225, 211);
+    opacity: 1;
+    transition: background-color 0.2s linear;
+} 
+
+.our-team-image :hover .our-team-list-socials {
+     opacity: 1;
+}
+
+/* .Rectangle_14 {
+    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    position: absolute;
+    left: 350px;
+    top: 970px;
+    width: 380px;
+    height: 470px;
+    z-index: 19;
+  } */
+  
+
+
 
 .icons-Facebook {
     background-image: url("../img/icons/socials/facebook.png");
