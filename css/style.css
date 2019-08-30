@@ -1,5 +1,4 @@
-html {
-    box-sizing: border-box;
+html {box-sizing: border-box;
 }
 
 *,
@@ -93,7 +92,7 @@ img {
     text-align: center;
 }
 
-.section-title-a {
+.section-a {
     margin: 0px;
     padding-bottom: 28px;
     font-family: "Kaushan Script";
@@ -102,7 +101,7 @@ img {
     line-height: 29px;
 }
 
-.section-title-b {
+.section-b {
     margin: 0px;
     padding-bottom: 42px;
     font-family: "Montserrat";
