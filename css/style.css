@@ -1,4 +1,5 @@
-html {box-sizing: border-box;
+html {
+    box-sizing: border-box;
 }
 
 *,
@@ -89,12 +90,16 @@ img {
 .section-title{
     margin: 0px;
     padding-bottom: 66px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
 }
 
 .title-a {
     margin: 0px;
     padding-bottom: 28px;
+    padding: 0px;
     font-family: "Kaushan Script";
     font-weight: 400;
     font-size: 24px;
@@ -139,6 +144,7 @@ img {
     align-content: flex-start;
     justify-content: space-between;
     margin: 0px;
+    padding: 0px;
 }
 
 .section-list li {
@@ -249,15 +255,14 @@ img {
 
 .our-team-list .our-team-list-socials:hover,
 .our-team-list .our-team-list-socials:focus {
-    transition: background-color, 0.2s linear; 
-    background-image: linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%); 
-    transform: translate(-10px[,-10px]);
-     
-    opacity: 0.9;  
-
+    transition: background-image, 0.2s linear; 
+    transform: translate(-10px,-10px);
+    background-image: linear-gradient( to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
+    opacity: 1;  
+ 
     /* как вариант */
 
-     box-shadow: 10px 10px 10px rgb(149,225,211),
+    box-shadow: 10px 10px 10px rgb(149,225,211),
     1px 1px rgb(149,225,211),
     2px 2px rgb(149,225,211),
     3px 3px rgb(149,225,211),
@@ -271,9 +276,9 @@ img {
 
     /* или */
 
-    box-shadow: 1px 1px ( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%), 10px 10px rgb(149, 225, 211);
+    /* box-shadow: 1px 1px ( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%), 10px 10px rgb(149, 225, 211);
     top: -10px;
-    left: -10px;
+    left: -10px; */
 }
 
 .our-team-image {
