@@ -255,7 +255,6 @@ img {
      
     opacity: 0.9;  
 
-
     /* как вариант */
 
      box-shadow: 10px 10px 10px rgb(149,225,211),
@@ -269,8 +268,6 @@ img {
     8px 8px rgb(149,225,211),
     9px 9px rgb(149,225,211),  
     10px 10px rgb(149,225,211);
-    /* transform: translate(-10px);  */
-
 
     /* или */
 
@@ -318,7 +315,6 @@ img {
     flex-direction: row;
     align-items:center;
     box-shadow: 0px 0px , 10px 10px rgb(149, 225, 211);
-    /* transform: translate(-10px[,-10px]); */
     background-image: linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     opacity: 0;
 }
