@@ -97,9 +97,10 @@ img {
 }
 
 .title-a {
+    display: block;
     margin: 0px;
-    padding-bottom: 28px;
     padding: 0px;
+    padding-bottom: 28px;
     font-family: "Kaushan Script";
     font-weight: 400;
     font-size: 24px;
@@ -107,6 +108,7 @@ img {
 }
 
 .title-b {
+    display: block;
     margin: 0px;
     padding-bottom: 42px;
     font-family: "Montserrat";
@@ -129,6 +131,7 @@ img {
 
 .section-list-item {
     position: relative;
+    display: block;
     width: 382px;
     /* height: 170px; */
     margin: 0px;
@@ -228,8 +231,8 @@ img {
 
 .team-description{
     margin: 0px;
-    padding: 0px;
-    padding-bottom: 94px;
+    padding: 0px 128px 94px 128px;
+    /* padding-bottom: 94px; */
     font-family: "Roboto";
     font-size: 15px;
     line-height: 24px;
@@ -407,7 +410,7 @@ img {
  .email {
    min-width: 228px;
    height: 40px;
-   border: (1px solid #cccccc 0.7));
+   border: 1px solid #cccccc;
    margin: 0px;
    padding-left: 12px;
    font-family: "Roboto";
